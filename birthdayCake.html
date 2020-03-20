@@ -51,6 +51,7 @@
 <script type="text/javascript">
 
 
+
     window.addEventListener("DOMContentLoaded", () => {
 
 
@@ -83,6 +84,7 @@
                 info.style.width = "65px";
                 info.style.height = "65px";
                 x.pause();
+                zgo("birthdayCake.html");
 
             }
             hide = !hide;
@@ -92,8 +94,8 @@
 
         	// SCENE
         const scene = new THREE.Scene();
-        scene.background = new THREE.Color(0x663300 );
-        scene.fog = new THREE.FogExp2( 0x663300, 0.0005 );
+        scene.background = new THREE.Color(0x000000);//0x663300
+        scene.fog = new THREE.FogExp2( 0x000000, 0.0005 );
 
         const clock = new THREE.Clock(true);
         var time;
@@ -425,8 +427,9 @@
   	}); //end of window event
 
 
+</script> 
 
-</script>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" /> -->
 
 
 </head>
